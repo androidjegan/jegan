@@ -9,6 +9,7 @@ the XML file that defines the app's layout is at res/layout/activity_maps.xml. I
     android:id="@+id/map"
     tools:context=".MapsActivity"
     android:name="com.google.android.gms.maps.SupportMapFragment" />
+    
 ------------------------------------------------------------------------------------------------------------------
 The maps activity Java file
 The Java file that defines the maps activity is named MapsActivity.java. It should contain the following code after your package name:
