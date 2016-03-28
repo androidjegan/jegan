@@ -2,7 +2,6 @@ this is an simple google map
 
 the XML file that defines the app's layout is at res/layout/activity_maps.xml. It contains the following code:
 
-
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,7 +9,6 @@ the XML file that defines the app's layout is at res/layout/activity_maps.xml. I
     android:id="@+id/map"
     tools:context=".MapsActivity"
     android:name="com.google.android.gms.maps.SupportMapFragment" />
-    
     
 The maps activity Java file
 The Java file that defines the maps activity is named MapsActivity.java. It should contain the following code after your package name:
@@ -26,7 +24,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
     }
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -40,9 +37,8 @@ The marker is created at coordinates 10,10, and displays the string 'Hello world
 
 @Override
 public void onMapReady(GoogleMap map) {
-    map.addMarker(new MarkerOptions()
-        .position(new LatLng(10, 10))
-        .title("Hello world"));
+
+    map.addMarker(new MarkerOptions().position(new LatLng(10, 10)).title("Hello world"));
 }
 
 Show/Hide an info window
